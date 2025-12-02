@@ -1,6 +1,8 @@
 import React from 'react';
 import { Search, ShieldCheck, CreditCard, Headphones } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { FadeIn } from './ui/FadeIn';
+import rechCopieImg from '../assets/rech_copie.jpg';
 
 export const Hero: React.FC = () => {
   return (
@@ -52,17 +54,15 @@ export const Hero: React.FC = () => {
               >
                 Réserver mon voyage
               </a>
-              <a
-                href="https://drive.google.com/file/d/1wA5H7v-4J0YMg3GJrJGlVGwXM08XGoRH/view?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                to="/comment-ca-marche"
                 className="px-8 py-4 rounded-xl font-bold text-lg text-white border border-slate-600 hover:bg-white/5 transition-all flex items-center justify-center gap-2"
               >
-                <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center">
+                {/* <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center">
                   <div className="w-0 h-0 border-t-[5px] border-t-transparent border-l-[8px] border-l-white border-b-[5px] border-b-transparent ml-1"></div>
-                </div>
-                Voir comment ça marche
-              </a>
+                </div> */}
+                Comment ça marche
+              </Link>
             </div>
           </FadeIn>
 
@@ -89,69 +89,11 @@ export const Hero: React.FC = () => {
         <FadeIn delay={300} direction="left" className="relative hidden lg:block">
           {/* Mockup Container */}
           <div className="relative w-full max-w-md mx-auto rounded-[2.5rem] shadow-2xl border-8 border-slate-800 overflow-hidden bg-slate-800">
-            {/* Status Bar Mockup */}
-            <div className="h-6 bg-slate-900 w-full flex items-center justify-end gap-1 px-4 py-1">
-              <div className="w-3 h-3 bg-white/20 rounded-full"></div>
-              <div className="w-3 h-3 bg-white/20 rounded-full"></div>
-            </div>
-
-            {/* App Header */}
-            <div className="bg-sky-500 p-6 pb-8">
-              <div className="flex justify-between items-center mb-6">
-                <div className="text-white font-bold text-lg">Buytaplace</div>
-                <div className="w-8 h-8 bg-white/20 rounded-full"></div>
-              </div>
-              <div className="space-y-3">
-                <div className="h-10 bg-white/10 rounded-lg flex items-center px-3 text-white/60 text-sm border border-white/10">
-                  <span className="mr-2">📍</span> Départ...
-                </div>
-                <div className="h-10 bg-white/10 rounded-lg flex items-center px-3 text-white/60 text-sm border border-white/10">
-                  <span className="mr-2">🏳️</span> Destination...
-                </div>
-                <div className="h-12 bg-white text-sky-600 font-bold rounded-xl flex items-center justify-center shadow-lg mt-2">
-                  Rechercher
-                </div>
-              </div>
-            </div>
-
-            {/* App Body - Results List */}
-            <div className="bg-slate-50 min-h-[300px] p-4 space-y-3">
-              {[1, 2, 3].map((i) => (
-                <div key={i} className="bg-white p-3 rounded-xl shadow-sm border border-slate-100 flex items-center gap-3">
-                  <div className="w-10 h-10 bg-sky-50 rounded-lg flex items-center justify-center text-xl">🚌</div>
-                  <div className="flex-1 space-y-2">
-                    <div className="h-2 bg-slate-200 rounded w-20"></div>
-                    <div className="h-2 bg-slate-100 rounded w-12"></div>
-                  </div>
-                  <div className="text-sky-500 font-bold text-sm">FCFA</div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Floating Elements behind phone */}
-          <div className="absolute -top-10 -right-10 bg-white p-4 rounded-2xl shadow-xl animate-bounce duration-[3000ms]">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-600">
-                <ShieldCheck size={20} />
-              </div>
-              <div>
-                <p className="text-xs text-slate-400 font-bold">Statut</p>
-                <p className="text-slate-800 font-bold">Confirmé</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="absolute bottom-20 -left-12 bg-white p-4 rounded-2xl shadow-xl animate-bounce duration-[4000ms]">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center text-orange-600">
-                <Search size={20} />
-              </div>
-              <div>
-                <p className="text-xs text-slate-400 font-bold">Recherche</p>
-                <p className="text-slate-800 font-bold">Ultra rapide</p>
-              </div>
-            </div>
+            <img
+              src={rechCopieImg}
+              alt="Recherche Buytaplace"
+              className="w-full h-full object-cover"
+            />
           </div>
         </FadeIn>
       </div>

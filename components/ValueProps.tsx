@@ -7,7 +7,7 @@ export const ValueProps: React.FC = () => {
     {
       icon: <Clock size={32} />,
       title: "Gain de temps",
-      description: "Fini les déplacements inutiles en agence. Réservez votre billet en moins de 2 minutes chrono."
+      description: "Fini les déplacements inutiles en agence. Réservez votre billet en moins de 2 minutes chrono depuis votre téléphone."
     },
     {
       icon: <TrendingUp size={32} />,
@@ -17,8 +17,9 @@ export const ValueProps: React.FC = () => {
     {
       icon: <Sliders size={32} />,
       title: "Flexibilité Totale",
-      description: "Bus, bateau ou Train ? Modifiez vos critères, choisissez votre siège et gérez vos réservations facilement."
-    }
+      description: "Bus, Bateau ou Train ? choisissez, enregistrez-vous, payez, recevez votre billet et votre réservation est prête."
+    },
+
   ];
 
   return (
@@ -27,7 +28,7 @@ export const ValueProps: React.FC = () => {
         <div className="text-center max-w-2xl mx-auto mb-16">
           <FadeIn>
             <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">
-              Fini le stress des fils d'attentes. <br />
+              Fini le stress des files d'attente. <br />
               <span className="text-sky-500">Bonjour l'efficacité.</span>
             </h2>
           </FadeIn>

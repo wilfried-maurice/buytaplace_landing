@@ -17,7 +17,7 @@ export const Footer: React.FC = () => {
                             </span>
                         </div>
                         <p className="text-slate-400 leading-relaxed text-lg">
-                            La première plateforme officiel de réservation de billets de bus, de bateau et de train au Gabon, simple, rapide et sécurisé.
+                            Plateforme officiel de réservation de billets de Bus, de Bateau et de Train au Gabon, simple, rapide et sécurisé.
                         </p>
                         <div className="flex gap-4">
                             <a href="https://www.facebook.com/share/18oHFaLwCq/" className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-sky-500 transition-colors">
@@ -34,7 +34,7 @@ export const Footer: React.FC = () => {
                         <h4 className="font-bold text-lg mb-6">Nous contacter</h4>
                         <ul className="space-y-4 text-slate-400 flex flex-col md:items-end">
                             <li className="flex items-center gap-3">
-                                <span>Libreville, Gabon<br />Quartier Louis</span>
+                                <span>Libreville, Gabon<br />Quartier Charbonnages</span>
                                 <MapPin size={20} className="text-sky-500 shrink-0" />
                             </li>
                             <li className="flex items-center gap-3">
